@@ -11,11 +11,11 @@ gulp.task("watch", function() {
     }
   });
 
-  watch("./app/index.html", function() {
+  watch("./index.html", function() {
     browserSync.reload();
   });
 
-  watch("./app/assets/styles/**/*.css", function() {
+  watch("./assets/styles/**/*.css", function() {
     gulp.start("cssInject");
   });
 });
